@@ -1,0 +1,44 @@
+@tailwind utilities;
+
+.navItem{
+    @apply flex items-center justify-between py-2 text-gray-600 transition-all duration-500 ease-in-out relative md:before:right-full md:before:left-12 text-sm;
+
+    /* Hover Styles */
+    @apply md:hover:before:contents md:hover:before:transition-all md:hover:before:ease-in-out  md:hover:before:h-1 hover:before:absolute hover:before:top-full hover:before:left-2 hover:before:bg-gray-800 hover:before:rounded-full hover:before:w-5 relative hover:text-gray-900;
+}
+
+.navItem div{
+    @apply ml-0;
+}
+
+
+.navItem.active{
+    @apply text-gray-900 rounded-b p-2 before:content-[''] before:absolute before:left-0 before:w-1 before:h-full before:rounded-br-full before:rounded-tr-full
+}
+
+.text{
+    @apply px-2 capitalize;
+}
+
+.navItem svg{
+    @apply mx-2;
+}
+
+
+@layer utilities{
+    .dropdown{
+        /* Generla Styles */
+        @apply bg-primary text-white flex top-full left-0  flex-col w-full rounded min-h-0 transition-all ease-in-out duration-200;
+
+        /* Mobile Styles */
+        @apply relative mb-3 mt-2;
+    
+        /*  Desktop Styles */
+        @apply md:absolute md:my-3 md:top-7
+    }
+    
+}
+
+.dropdown li{
+    @apply my-3;
+}

@@ -1,0 +1,83 @@
+@tailwind utilities;
+
+.navbar{
+	/* Mobile & General Styles */
+	@apply w-11/12 relative grid max-w-screen-2xl grid-cols-2 grid-rows-[repeat(5,(minmax(50px,auto)))] mx-auto py-3 px-1 items-start;
+
+	/* Tablet Styles */
+	@apply md:grid-cols-11 md:grid-rows-2 md:justify-items-center;
+
+	/* Desktop Styles */
+	@apply lg:grid-rows-1;
+}
+
+.navMenuToggler{
+	/* Mobile & General Styles */
+	@apply text-4xl p-1.5 relative z-10 text-blue-700 max-h-fit h-fit self-center justify-self-end ease-in-out transition-all duration-500;
+
+	/* Desktop Styles */
+	@apply md:hidden md:fixed;
+
+	/* Hover State Styles */
+	@apply hover:rounded-full hover:bg-[rgba(101,144,230,0.1)] hover:bg-blend-lighten
+}	
+
+
+.navMenuToggler svg{
+	@apply w-full h-[auto] active:fill-white
+}
+
+.navMenu{
+	/* Mobile & General Styles */
+	@apply col-span-2 row-span-3 flex flex-col w-4/5 mx-auto justify-self-start self-start h-auto z-10;
+
+	/* Tablet Styles */
+	@apply md:flex-row md:col-span-11 md:w-full md:justify-between  md:col-start-1 md:row-span-1 md:row-start-2  md:justify-self-center md:self-center;
+
+	/* Desktop Styles */
+	@apply lg:col-start-3 lg:col-span-7 lg:w-fit lg:row-start-1
+}
+
+.infoBtns{
+	/* Mobile & General Styles */
+	@apply flex justify-around self-center col-span-2 my-4;
+
+	/* Tablet Styles */
+	@apply md:col-start-9 md:justify-self-end md:col-span-3;
+
+	/* Desktop Styles */
+	@apply lg:col-start-10 lg:col-span-2;
+}
+.logo{
+	/* Moble & General Styles */
+	@apply  w-[calc(100px*0.6)] self-start max-h-fit h-fit flex;
+
+	/* Tablet Styles */
+	@apply md:w-[65%]
+}
+
+.logo img{
+	/* Mobile Styles */
+	@apply w-full relative before:content-['..now_you_can_stay_up..'] before:absolute before:top-full before:left-0 before:w-full before:h-20
+
+	/*  */
+}
+
+.logo span{
+	@apply text-[0.4em] hidden lg:flex lg:justify-center absolute top-3/4 mx-auto text-primary font-bold
+}
+
+
+@layer utilities{
+	.btn{
+		/* Mobile & General Styles */
+		@apply px-5 py-3 whitespace-nowrap bg-primary text-white font-semibold transition ease-in-out duration-500;
+
+		/* Hover Styles */
+		@apply hover:brightness-150
+	}
+	.btn__rounded{
+		/* Mobile & General Styles */
+		@apply rounded-full
+	}
+}

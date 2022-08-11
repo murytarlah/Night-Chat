@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@tailwind utilities;
+
+.hero{
+    /* Mobile & Genral Styles */
+    @apply grid w-[90%] mx-auto grid-cols-1 grid-rows-[repeat(3,(minmax(50px,auto)))] gap-10 ;
+
+    /* Tablet Styles */
+    @apply md:grid-cols-5 md:grid-rows-[repeat(2,(minmax(50px,auto)))] md:gap-5 md:gap-y-0
+
+}
+
+@layer utilities{
+    .heroContent{
+        /* Tablet Styles */
+        @apply md:col-span-2 md:self-center md:mx-5
+    }
+
+    .heroContent h1{
+        /* Mobile & Genral Styles */
+        @apply text-5xl my-9 font-inter font-bold leading-tight;
+
+        /* Tablet Styles */
+        @apply md:my-3;
+
+        /* Desktop Styles */
+        @apply lg:my-5
+    }
+
+    .heroContent h1 span{
+        @apply text-primary
+    }
+
+
+
+    .heroContent__body{
+        /* Mobile & GEnral Styles */
+        @apply text-base font-cairo;
+
+        /* Tablet Styles */
+        @apply md:text-xs ;
+
+        /* Desktop Styles */
+        @apply lg:text-lg 
+    }
+}
+
+.heroImage{
+    /* Mobile & Genral Styles */
+    @apply flex justify-center items-center;
+
+
+    /* Tablet Styles */
+    @apply md:col-span-3 
+}
+
+
+
+.heroImage img{
+    /* Mobile & General Styles */
+    @apply w-full;
+
+    /* Tablet Styles */
+    @apply md:w-[90%]
+}
+
+
+.heroCTA{
+    /* Tablet Styles */
+    @apply md:col-span-2 md:ml-5
+}
+
+.heroCTA p{
+    @apply w-full text-xs py-2 text-center;
+
+    /* Tablet Styles */
+    @apply md:text-left
+
+
+
+}
+.heroCTA p span{
+    @apply text-primary
+}
+
+.heroForm{
+    /* Mobile & General Styles */
+    @apply grid grid-cols-3 justify-between rounded-full shadow-md drop-shadow-sm gap-4 my-5;
+
+    /* Tablet Styles */
+    @apply  md:my-2 
+}
+
+.heroForm > input{
+    @apply bg-black text-white rounded-full p-2 cursor-pointer text-xs
+}
+
+.heroForm label{
+    @apply col-span-2
+}
+
+.heroForm label input{
+    @apply m-2 w-full mx-4 bg-transparent p-1 outline-none border-0 placeholder:text-gray-500
+}
