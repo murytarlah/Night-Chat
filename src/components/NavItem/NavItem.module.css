@@ -1,7 +1,7 @@
 @tailwind utilities;
 
 .navItem{
-    @apply flex items-center justify-between py-2 text-gray-600 transition-all duration-500 ease-in-out relative md:before:right-full md:before:left-12 text-sm;
+    @apply flex flex-wrap items-center justify-between py-2 text-gray-600 transition-all duration-500 ease-in-out relative md:before:right-full md:before:left-12 text-sm;
 
     /* Hover Styles */
     @apply md:hover:before:contents md:hover:before:transition-all md:hover:before:ease-in-out  md:hover:before:h-1 hover:before:absolute hover:before:top-full hover:before:left-2 hover:before:bg-gray-800 hover:before:rounded-full hover:before:w-5 relative hover:text-gray-900;

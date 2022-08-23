@@ -1,0 +1,46 @@
+.cardlight{
+  /* Mobile & Genral Styles */
+  @apply p-8 text-left py-2  shadow-[0px_0px_5px_3px_rgba(116,_146,_255,_0.25)] rounded-2xl my-12 w-full self-center justify-self-center;
+
+
+  /* Tablet Styles */
+  @apply lg:w-[384px]
+}
+
+.cardlight .card__number{
+  @apply bg-primary rounded-full w-[calc(50px*.8)] h-[calc(50px*.8)] flex justify-center items-center text-white my-5
+}
+
+.cardlight .card__title{
+  @apply my-2 font-medium
+}
+
+.cardlight .card__body{
+  @apply text-xs mb-4
+}
+
+
+.carddark{
+  /* Mobile & Genral Styles */
+  @apply p-8 text-left py-2 bg-[#EFF6FF] min-h-max  shadow-[0px_0px_5px_3px_rgba(116,_146,_255,_0.25)] text-center rounded-2xl my-12 w-full self-center justify-self-center flex justify-center items-center flex-col;
+
+
+  /* Tablet Styles */
+  @apply lg:w-[384px] md:h-48
+}
+
+.carddark h3{
+  @apply my-4 font-medium
+}
+
+.carddark h3 span{
+  @apply text-primary
+}
+
+.carddark p{
+  @apply text-xs mb-4
+}
+
+.carddark p span{
+  @apply text-primary
+}

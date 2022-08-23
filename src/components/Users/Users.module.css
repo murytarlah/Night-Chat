@@ -1,0 +1,49 @@
+.usersSection{
+    @apply w-full bg-lgray my-5
+}
+
+.content{
+    /* Mobile & General Styles */
+    @apply p-5 mx-auto text-center max-w-screen-2xl;
+
+    /* Tablet Styles */
+    @apply md:w-11/12
+}
+
+.content h1{
+    @apply my-10
+}
+
+.users{
+    /* Mobile & General Styles */
+    @apply grid grid-rows-5 gap-10 justify-between items-center my-5;
+
+    /* Tablet Styles */
+    @apply md:grid-rows-1 md:grid-cols-6 md:mx-auto;
+}
+
+.user{
+    @apply w-1/3 mx-auto;
+
+    /* Tablet Styles */
+    @apply md:w-4/5
+}
+
+.user:nth-child(1), .user:nth-child(5), .user:nth-child(6){
+    /* Mobile & Generla Styles */
+    @apply w-1/5;
+
+    @apply md:w-2/5
+}
+
+.user:nth-child(2){
+    @apply w-2/4;
+
+    /* Tablet Styles */
+    @apply md:w-full
+}
+
+.user img{
+    @apply w-full
+}
+

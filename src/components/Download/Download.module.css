@@ -1,0 +1,36 @@
+.Download{
+  /* Mobile & General Styles */
+  @apply grid grid-cols-1 gap-8 justify-between w-11/12 mx-auto relative py-20 my-10 max-w-screen-2xl;
+
+  /* Tablet Styles */
+  @apply md:grid-cols-2 md:w-4/5 mx-auto
+}
+
+.content{
+  @apply relative self-center px-10;
+  @apply md:before:contents md:before:w-7 md:before:h-7 md:before:bg-primary md:before:absolute md:before:-bottom-16 md:before:left-10 md:before:rounded-full;
+  @apply md:after:contents md:after:w-4 md:after:h-4 md:after:bg-primary md:after:absolute md:after:-bottom-8 md:after:left-20 md:after:rounded-full
+}
+
+.content h1{
+  @apply text-5xl font-bold my-3 leading-normal
+}
+
+.content h1 span{
+  @apply text-primary
+}
+
+.content p{
+  @apply my-4 text-sm font-light
+}
+
+.Download__image{
+  @apply self-center justify-self-center;
+}
+
+.Download__image img{
+  @apply w-full;
+
+  /* Tablet Styles */
+  @apply md:w-4/5  md:mx-auto;
+}

@@ -1,0 +1,26 @@
+.processes{
+  @apply text-center w-11/12 mx-auto max-w-screen-2xl px-5 my-10;
+
+  /* Tablet Styles */
+  /* @apply md:grid-cols-2 md:grid-rows-[repeat(3,minmax(50px,auto))] */
+}
+
+.processes > p{
+  @apply text-primary py-5
+}
+
+.processes > h2{
+  @apply text-xl font-medium
+}
+
+.processes > h2 span{
+  @apply text-primary
+}
+
+.processInfo{
+  /* Mobile & General Styles */
+  @apply grid gap-x-36;
+
+  /* Tablet Styles */
+  @apply md:grid-cols-2 md:grid-rows-[repeat(3,minmax(50px,auto))]
+}

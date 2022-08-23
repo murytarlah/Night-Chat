@@ -1,0 +1,56 @@
+.footer{
+  @apply border-t-2 border-dashed
+}
+
+.footer > div{
+  @apply mx-auto p-5 py-10 max-w-screen-2xl grid grid-rows-[repeat(3,(minmax(50px,auto)))] grid-cols-1 gap-16;
+
+  /* Tablet Styles */
+  @apply md:w-11/12 md:grid-cols-6
+}
+
+.footerHeader{
+  @apply md:col-span-2
+}
+
+.footerHeader h1{
+  @apply text-2xl font-bold mb-4
+}
+
+.footerHeader h1 span{
+  @apply text-primary
+}
+
+.footerHeader p{
+  @apply text-xs lg:w-3/5
+}
+
+.footerHeader select{
+  @apply w-full my-3 p-2 bg-white border rounded-lg;
+
+  /* Desktop Styles */
+  @apply lg:w-4/5
+}
+
+.footerContent{
+  /* Mobile & General Styles */
+  @apply grid grid-cols-2 gap-10;
+
+  /* Tablet Styles */
+  @apply md:col-span-4 md:grid-cols-3
+}
+
+.headings h3{
+  @apply text-primary font-bold
+}
+.headings ul li{
+  @apply text-xs py-2
+}
+
+.footerFooter{
+  @apply flex justify-between md:col-span-6
+}
+
+.footerFooter p{
+  @apply text-xs
+}

@@ -10,7 +10,8 @@ module.exports = {
         'cairo': ['cairo', 'sans-serif']
       },
       colors: {
-        primary: '#006BFF'
+        primary: '#006BFF',
+        lgray: '#F6F6F6'
       },
       keyframes: {
         slideDown: {

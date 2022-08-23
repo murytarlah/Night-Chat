@@ -4,7 +4,7 @@
 
 .hero{
     /* Mobile & Genral Styles */
-    @apply grid w-[90%] mx-auto grid-cols-1 grid-rows-[repeat(3,(minmax(50px,auto)))] gap-10 ;
+    @apply grid w-[90%] mx-auto grid-cols-1 grid-rows-[repeat(3,(minmax(50px,auto)))] gap-10  max-w-screen-2xl;
 
     /* Tablet Styles */
     @apply md:grid-cols-5 md:grid-rows-[repeat(2,(minmax(50px,auto)))] md:gap-5 md:gap-y-0
@@ -14,7 +14,7 @@
 @layer utilities{
     .heroContent{
         /* Tablet Styles */
-        @apply md:col-span-2 md:self-center md:mx-5
+        @apply md:col-span-2 md:self-center md:mx-5 
     }
 
     .heroContent h1{

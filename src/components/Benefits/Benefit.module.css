@@ -1,0 +1,62 @@
+.benefits{
+  @apply text-center w-11/12 mx-auto max-w-screen-2xl px-5 my-10 relative py-10;
+
+  /* Tablet Styles */
+  /* @apply md:grid-cols-2 md:grid-rows-[repeat(3,minmax(50px,auto))] */
+}
+
+.benefits > p{
+  @apply text-primary py-5
+}
+
+.b_image{
+  @apply w-4/5 mx-auto my-10;
+
+  /* Tablet Styles */
+  @apply md:w-2/5
+}
+
+.b_image img{
+  @apply w-full
+}
+
+.benefitsInfo{
+  /* Mobile & General Styles */
+  @apply grid gap-x-32 my-3;
+
+  /* Tablet Styles */
+  @apply md:grid-cols-2 md:grid-rows-[repeat(2,minmax(50px,auto))]
+}
+
+
+.background{
+  @apply md:absolute flex justify-between bottom-0 md:grid md:grid-cols-12 grid-rows-4 md:w-full items-center
+}
+
+.left{
+  @apply row-start-3 
+}
+
+.right{
+  @apply -z-10 absolute right-0 h-full row-span-4 lg:col-start-9 md:col-start-11 col-span-4 md:grid grid-cols-[repeat(4,minmax(50px,auto))] grid-rows-4
+}
+
+.right >div:nth-child(1){
+  @apply self-center justify-self-start row-start-3
+}
+
+.right >div:nth-child(2){
+  @apply self-center justify-self-center row-start-3 col-start-2 row-span-2 md:col-span-2
+}
+
+.right >div:nth-child(2) img{
+  @apply w-4/5 mx-auto
+}
+
+.right >div:nth-child(3){
+  @apply self-start justify-self-end col-start-3
+}
+
+.right >div:nth-child(4){
+  @apply self-center justify-self-center row-start-2 col-start-4 
+}
