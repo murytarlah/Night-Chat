@@ -1,0 +1,29 @@
+.majorFeature{
+  @apply w-11/12 mx-auto flex flex-col text-center my-16
+}
+
+.top, .bottom{
+  @apply w-4/5 mx-auto text-sm;
+
+  /* Tablet Styles */
+  @apply md:w-1/2;
+
+  /* Desktop Styles */
+  @apply lg:text-base lg:w-1/3
+}
+
+.top{
+  @apply font-light
+}
+
+.bottom span{
+  @apply text-primary
+}
+
+.image{
+  /* Mobile Styles */
+  @apply w-full mx-auto;
+
+  /* Tablet Styles */
+  @apply md:w-3/5
+}

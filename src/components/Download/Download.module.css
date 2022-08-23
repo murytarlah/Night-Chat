@@ -7,7 +7,7 @@
 }
 
 .content{
-  @apply relative self-center px-10;
+  @apply relative self-center px-5;
   @apply md:before:contents md:before:w-7 md:before:h-7 md:before:bg-primary md:before:absolute md:before:-bottom-16 md:before:left-10 md:before:rounded-full;
   @apply md:after:contents md:after:w-4 md:after:h-4 md:after:bg-primary md:after:absolute md:after:-bottom-8 md:after:left-20 md:after:rounded-full
 }
@@ -32,5 +32,4 @@
   @apply w-full;
 
   /* Tablet Styles */
-  @apply md:w-4/5  md:mx-auto;
 }

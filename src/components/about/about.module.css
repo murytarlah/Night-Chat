@@ -1,12 +1,16 @@
 .feature{
-  @apply mx-2 w-4/5  mx-auto my-28; 
+  @apply mx-2 w-4/5  mx-auto my-28 mb-4; 
 
   /* Tablet Styles */
   @apply md:grid md:grid-cols-5 md:gap-20
 }
 
 .feature__main{
-  @apply md:col-span-2  w-4/5 mx-auto self-center justify-self-center
+  /* Mobile & General Styles */
+  @apply mx-auto self-center justify-self-center my-10;
+
+  /* Tablet Styles */
+  @apply md:col-span-3 lg:col-span-2  md:w-4/5
 }
 
 .feature__main h3{
@@ -22,5 +26,5 @@
 }
 
 .feature__image{
-  @apply col-span-3 self-center justify-self-end
+  @apply md:col-span-2 lg:col-span-3 self-center justify-self-end
 }
