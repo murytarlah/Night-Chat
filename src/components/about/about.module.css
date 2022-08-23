@@ -1,3 +1,7 @@
+.about{
+  @apply max-w-screen-2xl w-11/12 mx-auto
+}
+
 .feature{
   @apply mx-2 w-4/5  mx-auto my-28 mb-4; 
 

@@ -1,0 +1,63 @@
+.Testimonials{
+  /*  Mobile & General Styles */
+  @apply w-11/12 mx-auto relative max-w-screen-2xl;
+
+  /* Tablet Styles */
+  @apply md:grid md:grid-cols-2 md:gap-10 md:w-4/5 md:items-center md:justify-center
+}
+
+.image{
+  @apply self-center justify-self-center
+}
+
+.image img{
+  /* Mobile & General Styles */
+  @apply w-10/12 mx-auto;
+
+  /* Tablet Styles */
+  @apply md:w-4/5
+}
+
+.bg{
+  @apply absolute -z-10 rotate-45 opacity-75 top-2/3 left-0 w-full;
+  
+  /* Tablet Styles */
+  @apply md:left-6 md:-bottom-16 md:col-span-2 md:w-full md:rotate-0 md:opacity-100;
+
+  /* Desktop Styles */
+  @apply lg:left-20
+}
+
+.bg img{
+  @apply lg:w-4/5
+}
+
+.content{
+  /* Mobile Styles */
+  @apply grid grid-rows-[repeat(3,minmax(50px,auto))] justify-between gap-8 my-10 lg:w-3/5 w-11/12 mx-auto;
+
+}
+
+.testimonial{
+  @apply flex flex-col justify-between
+}
+
+.testimonial h4{
+  @apply uppercase text-gray-500 text-sm
+}
+
+.testimonial q{
+  @apply font-medium py-2
+}
+
+.testimonial p{
+  @apply text-[#013071] font-bold
+}
+
+.content button{
+  @apply flex justify-start items-center py-2
+}
+
+.content button span{
+  @apply mx-3 bg-black w-[calc(30px*.8)] h-[calc(30px*.8)] rounded-full flex justify-center items-center text-2xl
+}

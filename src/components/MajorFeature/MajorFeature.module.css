@@ -1,5 +1,5 @@
 .majorFeature{
-  @apply w-11/12 mx-auto flex flex-col text-center my-16
+  @apply w-11/12 mx-auto flex flex-col text-center justify-between items-center my-16 max-w-screen-2xl;
 }
 
 .top, .bottom{
@@ -25,5 +25,8 @@
   @apply w-full mx-auto;
 
   /* Tablet Styles */
-  @apply md:w-3/5
+  @apply md:w-4/5;
+
+  /* Desktop Styles */
+  @apply lg:w-3/5;
 }

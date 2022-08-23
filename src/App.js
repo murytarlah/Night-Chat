@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import MajorFeature from './components/MajorFeature/MajorFeature';
 import RegistrationProcess from './components/RegistrationProcess/RegistrationProcess';
+import Testimonial from './components/Testimonials/Testimonial';
 import Users from './components/Users/Users';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 				<Benefit />
 				<MajorFeature />
 				<About/>
+				<Testimonial />
 				<Download />
 				<Footer />
 			</Router>
