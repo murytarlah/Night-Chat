@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { Icon } from '@iconify/react';
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -7,22 +8,45 @@ const Footer = () => {
 		<div className={styles.footer}>
 			<div>
 				<div className={styles.footerHeader}>
-					<h1>
-						Easy <br />
-						<span>ahead</span>
-					</h1>
-					<p>
-						Night chat is your one stop app for easy and hassle free
-						connection with the world so you can accomplish more.
-					</p>
-					<select name="language" id="">
-						<option value="English">English</option>
-						<option value="Spanish">Spanish</option>
-						<option value="Deutch">Deutch</option>
-						<option value="Japanese">Japanese</option>
-					</select>
+					<div>
+						<h1>
+							Easy <br />
+							<span>ahead</span>
+						</h1>
+						<p>
+							Night chat is your one stop app for easy and hassle free
+							connection with the world so you can accomplish more.
+						</p>
+						<select name="language" id="">
+							<option value="English">English</option>
+							<option value="Spanish">Spanish</option>
+							<option value="Deutch">Deutch</option>
+							<option value="Japanese">Japanese</option>
+						</select>
+					</div>
 					<div className={styles.downloads}>
-
+						<button> 
+							<NavLink to={'#'}>
+								<Icon icon="icon-park-solid:apple" color="white" />
+								<h4>Download on the</h4>
+								<h2>App Store</h2>
+							</NavLink>
+						</button>
+						<button> 
+							<NavLink to={'#'}>
+								<Icon icon="logos:google-play-icon" />
+								<h4>GET IT ON</h4>
+								<h2>Google Play</h2>
+							</NavLink>
+						</button>
+					</div>
+					<div className={styles.socials}>
+						<NavLink to={'#'}><Icon icon="akar-icons:twitter-fill" /></NavLink>
+						<NavLink to={'#'}><Icon icon="bxl:facebook" /></NavLink>
+						<NavLink to={'#'}><Icon icon="akar-icons:instagram-fill" /></NavLink>
+						<NavLink to={'#'}><Icon icon="akar-icons:linkedin-fill" /></NavLink>
+						<NavLink to={'#'}><Icon icon="ant-design:google-plus-outlined" /></NavLink>
+						<NavLink to={'#'}><Icon icon="arcticons:youtube" /></NavLink>
 					</div>
 				</div>
 				<div className={styles.footerContent}>

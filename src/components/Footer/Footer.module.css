@@ -54,3 +54,35 @@
 .footerFooter p{
   @apply text-xs
 }
+
+.downloads{
+ @apply flex my-10
+}
+
+.downloads button{
+  @apply bg-black text-white p-2 rounded mr-8
+}
+
+.downloads button a{
+  @apply grid grid-cols-[repeat(2,minmax(40px,auto))] grid-rows-[repeat(2,minmax(5px,auto))] items-center justify-start
+}
+
+.downloads button a svg{
+  @apply row-span-2 self-center text-2xl justify-self-center
+}
+
+.downloads button a h4{
+  @apply text-xs justify-self-start
+}
+
+.downloads button a h2{
+  @apply text-lg justify-self-start
+}
+
+.socials{
+  @apply grid grid-cols-6 w-4/5 my-7 items-center justify-center
+}
+
+.socials svg{
+  @apply text-2xl
+}

@@ -1,0 +1,63 @@
+.container{
+  @apply bg-[#04234F] my-10 w-full
+}
+
+.container > div{
+  /* Mobile Styles */
+  @apply w-11/12 mx-auto max-w-screen-2xl;
+
+  @apply md:flex md:justify-between md:w-full md:mx-auto
+}
+
+.left{
+  @apply absolute md:static opacity-50 md:opacity-100
+}
+
+.right{
+  @apply hidden
+}
+.left, .right{
+  @apply md:grid md:grid-cols-[repeat(2,minmax(30px,auto))] md:grid-rows-[repeat(5,minmax(100px,auto))] md:h-max md:mb-10
+}
+
+
+.left > img, .right > img{
+  @apply row-span-6 w-3/5 
+}
+
+.left > img{
+  @apply justify-self-end
+}
+
+.left > p, .right > p{
+  @apply relative self-center w-3/5 text-white font-light text-sm text-center
+}
+
+.left > p{
+  @apply hidden md:block row-start-3 row-end-4 col-start-2 self-start;
+}
+
+.right > p{
+  @apply row-start-5 row-end-6 col-start-1 justify-self-end self-start
+}
+
+
+.content{
+  @apply grid grid-rows-[repeat(5,minmax(100px,auto))] justify-between items-center py-14 text-white
+}
+
+.content button{
+  @apply rounded-full p-5 border-2 text-base
+}
+
+.content p:first-of-type{
+  @apply text-2xl text-center font-semibold row-start-3 row-end-4
+}
+
+.content p:last-of-type{
+  @apply text-xl text-center font-medium row-start-[5] row-end-[6]
+}
+
+.content p span{
+  @apply bg-white text-primary font-medium
+}
